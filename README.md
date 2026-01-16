@@ -1,1 +1,1 @@
-# Dialog NPC for vue3
+# Dialog NPC (vue3)
