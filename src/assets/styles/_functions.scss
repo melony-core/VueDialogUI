@@ -1,0 +1,15 @@
+@use "sass:math";
+
+@function rem($pxValue) {
+    @return math.div($pxValue, 16px) * 1rem; 
+}
+
+@function vw($pxValue) {
+    $viewport: calc(1920 / 100) * 1px;
+    @return calc($pxValue / $viewport) * 1vw;
+}
+
+@function vh($value) {
+    $base-viewport: 1080;
+    @return calc(#{$value} / #{$base-viewport} * var(--scale-factor, 1) * 100vh);
+}

@@ -1,0 +1,23 @@
+.dialog {
+    .header {
+        width: 100%;
+
+        display: flex;
+        gap: vh(6);
+        flex-direction: column;
+
+        h1 {
+            font-weight: 600;
+            font-style: normal;
+            font-size: vh(21);
+        }
+
+        p {
+            font-weight: 400;
+            font-style: normal;
+            font-size: vh(16);
+
+            color: rgba(#FFF, .4);
+        }
+    }
+}

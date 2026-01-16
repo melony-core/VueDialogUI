@@ -1,0 +1,32 @@
+.dialog {
+    position: fixed;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+
+    background: linear-gradient(180deg, rgba(15, 15, 15, 0) 40%, #0F0F0F 103.47%);
+
+    .dialog-container {
+        position: absolute;
+        width: vh(460);
+        height: fit-content;
+
+        left: vh(40);
+        bottom: vh(40);
+
+        display: flex;
+        gap: vh(16);
+        flex-direction: column;
+
+        .buttons {
+            width: 100%;
+
+            display: grid;
+            gap: vh(10);
+            grid-template-columns: repeat(auto-fit, minmax(vh(200px), 1fr));
+
+            button:last-child:nth-child(odd) {
+                grid-column: 1 / 3;
+            }
+        }
+    }
+}
